@@ -8,7 +8,7 @@ def check_balance(brackets):
         elif bracket == ']':
             lb -= 1
             
-        if rb+lb != 0:
+        if rb+lb < 0:
             break
             
     return rb+lb==0
