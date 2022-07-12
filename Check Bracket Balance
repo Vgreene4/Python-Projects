@@ -1,0 +1,14 @@
+def check_balance(brackets):
+    rb = 0
+    lb = 0
+    for bracket in brackets:
+        if bracket == '[':
+            rb += 1
+
+        elif bracket == ']':
+            lb -= 1
+            
+        if rb+lb != 0:
+            break
+            
+    return rb+lb==0
