@@ -1,0 +1,6 @@
+def rep_cat(x, y):
+    xstring= str(x)
+    xstring*= 10
+    ystring= str(y)
+    ystring*= 5
+    return xstring + ystring
