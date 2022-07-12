@@ -1,0 +1,11 @@
+# 'price' has already been created
+if price >= 300:
+    price*= .70
+elif price >= 200:
+    price*= .80
+elif price >= 100:
+    price*=.90
+elif price >= 0:
+    price*=.95
+else:
+    price
