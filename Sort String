@@ -1,0 +1,20 @@
+def sortString(string):
+    if type(string) != str:
+        return "Not a string!"
+    elif type(string) == str:
+        upperstring=""
+        lowerstring=""
+        punctuation=""
+        scount= 0
+    for i in range(0, len(string)):
+        if ord(string[i])>=97 and ord(string[i])<=122:
+            lowerstring+=string[i]
+        elif ord(string[i])>=65 and ord(string[i])<=90:
+            upperstring+=string[i]
+        elif ord(string[i])>=33 and ord(string[i])<=64:
+            punctuation+=string[i]
+        elif string[i] == " ":
+            scount+=1
+    return upperstring + "\n" + lowerstring + "\n" + punctuation + "\n" + str(scount)
+    
+    #takes string and returns uppercase and lowercase letters and punctuation and the number of spaces in the string 
