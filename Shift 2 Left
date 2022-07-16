@@ -1,6 +1,0 @@
-def left2(str):
-  lstr= len(str)
-  beginstr= str[2:lstr]
-  fstr= beginstr+str[0]+str[1]
-  return fstr
-#shifts characters 2 places to the left of their origional position
