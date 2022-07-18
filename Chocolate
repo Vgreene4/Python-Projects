@@ -1,0 +1,17 @@
+def make_chocolate(small, big, goal):
+  if goal%5>small and goal-5*big<0:
+    return -1
+  if 5*big>=goal and goal%5==0 and goal>=5:
+    return 0
+  if small>=goal-(5*big):
+    if goal-5*big>0:
+      return goal-5*big
+    elif goal-5*big<0:
+      return goal%5
+  if 5*big > goal and goal%5==0:
+    return 0
+  if (5*big)+small < goal:
+    return -1
+  if small< goal-5*big:
+    return -1
+    #big =small*5, this returns the number of small chocolate bars needed to reach to goal and returns -1 if the goal is unreachable
