@@ -1,0 +1,19 @@
+def sort_artists(alist):
+    namelist=[]
+    revlist=[]
+    for sublist in alist:
+        for i in range(0, len(sublist)):
+            if i%2 == 0:
+                name= sublist[i]
+                namelist.append(name)
+            if i%2 != 0:
+                val= sublist[i]
+                revlist.append(val)
+    namelist.sort()
+    revlist.sort()
+    revlist.reverse()
+    mytup= (namelist, revlist)   
+    return mytup
+    # function takes list of lists containing artists and revenue and sorts them into two lists contained in a tuple: one list containing the artists names in alphabetical 
+    order, and another with their revenue in order from most to least
+    
