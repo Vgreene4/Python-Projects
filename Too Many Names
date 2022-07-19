@@ -1,0 +1,16 @@
+def name_lists(lnames):
+    finaldict={}
+    answerlist=[]
+    for names in lnames:
+        fl= names.split()
+        for i in range(0, len(lnames)):
+            fulnam= lnames[i].split()
+            if fl[0]==fulnam[0]:
+                answerlist.append(lnames[i])
+                answerlist.sort()
+                finaldict[fl[0]]= answerlist
+            if i==len(lnames)-1:
+                answerlist=[]
+    return finaldict
+    # function takes a list of names as an input and returns a dictionary with they keys being first names and the values being lists containing all people with that
+    first name 
