@@ -1,0 +1,22 @@
+def detect_pattern(s1, s2): # this function takes two parameters as strings to compare.
+  # Keep in mind that this method should return the same value 
+  # no matter what order the two strings are passed
+  
+  # Insert your code here
+  if len(s1)!= len(s2):
+    return False
+  if s1==s2:
+    return True
+  elif len(s1)== 1 and len(s2)==1:
+    return True
+  for i in range(0, len(s1)):
+    for n in range(0, len(s2)):
+      if s1[i]==s1[n] and s2[i]!=s2[n]:
+        return False 
+      if s2[i]==s2[n] and s1[i]!=s1[n]:
+        return False
+  return True
+     
+  
+  pass
+  #Detects if two string share the same pattern 
